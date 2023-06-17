@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Card from './Card';
+import CardList from './CardList';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {[...Array(10).keys()].map((_, i) => <Card id={i + 1} name={'a'} email={'aaa@AAA.com'} />)}
+    <CardList />
   </React.StrictMode>,
 );
 
